@@ -24,7 +24,7 @@ $ # install avahi-daemon in host machine
 $ sudo docker run -d --name snapserver \
 	--restart=unless-stopped \
 	--user _snapserver \
-	-p 1704:1704 -p 1705:1705 -p 1780:1780 -p 5000:5000 \
+	--network host \
 	-v /var/run/avahi-daemon:/var/run/avahi-daemon \
 	-v /var/run/dbus:/var/run/dbus \
 	menghan/snapcast:snapserver
