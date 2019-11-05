@@ -29,3 +29,9 @@ $ sudo docker run -d --name snapserver \
 	-v /var/run/dbus:/var/run/dbus \
 	menghan/snapcast:snapserver
 ```
+
+## arm supoort
+
+for arm device, use following image:
+- server: menghan/snapserver.arm32v7
+- client: menghan/snapclient.arm32v7
